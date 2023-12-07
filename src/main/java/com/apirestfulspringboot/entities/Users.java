@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.util.Date;
 import java.util.List;
@@ -18,7 +19,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Users {
     @Id
-    @GeneratedValue(generator = "UUID")
+    @UuidGenerator
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
 
