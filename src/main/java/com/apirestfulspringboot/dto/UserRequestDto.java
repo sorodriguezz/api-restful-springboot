@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
+import java.util.ArrayList;
 import java.util.List;
 
 @Setter
@@ -32,5 +33,5 @@ public class UserRequestDto {
     private String password;
 
     @Valid
-    private List<PhoneRequestDto> phones;
+    private List<PhoneRequestDto> phones = new ArrayList<>();
 }

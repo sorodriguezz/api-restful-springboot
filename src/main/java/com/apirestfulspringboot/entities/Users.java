@@ -44,6 +44,6 @@ public class Users {
     @Column(name = "is_active", nullable = false)
     private boolean isActive;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idUser")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "idUser")
     private List<Phone> phones;
 }

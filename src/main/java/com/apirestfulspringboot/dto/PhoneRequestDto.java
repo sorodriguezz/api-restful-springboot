@@ -14,5 +14,5 @@ public class PhoneRequestDto {
 
     private String citycode;
 
-    private String contrycode;
+    private String countrycode;
 }
